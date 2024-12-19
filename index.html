@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Translation Services</title>
+    <title>Translation Services - Ilona Sobczak</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,65 +20,141 @@
             text-align: center;
         }
         nav {
-            text-align: center;
-            margin: 1rem 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 0 0 0 8px;
+            z-index: 1000;
         }
         nav a {
-            margin: 0 1rem;
+            margin: 0 0.5rem;
             text-decoration: none;
-            color: #0077cc;
+            color: white;
+            font-size: 0.9rem;
         }
         nav a:hover {
             text-decoration: underline;
         }
         main {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 5rem auto 1rem auto;
             padding: 1rem;
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            border-bottom: 2px solid #0077cc;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #0077cc;
+        }
+        ul {
+            list-style: disc inside;
+            padding: 0;
         }
         footer {
             text-align: center;
             padding: 1rem;
             background: #0077cc;
             color: white;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            position: relative;
+        }
+        blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-left: 4px solid #0077cc;
+        }
+        /* Styling for the profile photo */
+        .profile-photo {
+            float: right;
+            margin-left: 1rem;
+            max-width: 150px; /* Reduced size of the image */
+            height: auto;
+            margin-bottom: 0.5rem; /* Reduced space between image and next section */
+        }
+        /* Preventing the image from overlapping with the education section */
+        .about-me {
+            overflow: auto; /* This clears the float and ensures the text stays next to the image */
+            margin-bottom: 0; /* Removed extra space below the About Me section */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Translation Services</h1>
-        <p>Bridging cultures with professional translations</p>
-    </header>
     <nav>
-        <a href="index.html">English</a>
-        <a href="french.html">Français</a>
-        <a href="german.html">Deutsch</a>
-    </nav>
+        <a href="index.html" data-country="English">
+            English <span class="flag">🇺🇸🇬🇧</span>
+        </a>
+        <a href="french.html" data-country="Français">
+            Français <span class="flag">🇫🇷</span>
+        </a>
+        <a href="german.html" data-country="Deutsch">
+            Deutsch <span class="flag">🇩🇪</span>
+        </a>
+    </nav>    
+    <header>
+        <h1>Ilona Sobczak</h1>
+        <p>Professional Translator & Interpreter (German - French - English)</p>
+    </header>
     <main>
-        <h2>About Me</h2>
-        <p>Hi, my name is Alex. I am a professional translator with over 10 years of experience. I specialize in translating between English, French, and German. With a passion for languages and a keen eye for detail, I provide accurate and culturally nuanced translations to help you communicate effectively across borders.</p>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <!-- Insert photo here -->
+            <img src="headshot.jpg" alt="Ilona Sobczak" class="profile-photo">
+            <p><strong>Dual Citizenship:</strong> Belgian/American</p>
+            <p>I am of Belgian origin, and my job brought me to the US in 1993. Being trilingual (German/French/English) is my greatest asset as a translator and interpreter. 
+                <p>I acquired permanent residence through my employer in 2002 and US citizenship independently in 2009.</p>
+        </section>
 
-        <h2>Services Offered</h2>
-        <ul>
-            <li>Document Translation</li>
-            <li>Website Localization</li>
-            <li>Business and Marketing Materials</li>
-            <li>Proofreading and Editing</li>
-        </ul>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>11/19/2024: Successfully passed the Written Exam administered by the State Courts Administrator Office of Florida (Court Interpreter Certification and Regulation Program) – currently being Court-registered</li>
+                <li>02/14/2023: Successfully passed Florida Teacher Certification Examination in French (K-12)</li>
+                <li>06/23/1997: Belgian State Exam: Translator/Reviewer – Ref.: 68022521886 / CFG97045</li>
+                <li>1991–1992: Teaching Certification acquired at the “Institut Saint Laurent” in Liège, Belgium</li>
+                <li>1987-1991: "Institut Libre Marie Haps", University of Louvain-la-Neuve, Brussels, Belgium. Licenciée en Traduction (recognized as Masters in Translation in the US)</li>
+                <li>July 1991: Scholarship in Germanic Languages, Humboldt University, Berlin, Germany</li>
+            </ul>
+        </section>
 
-        <h2>Credentials</h2>
-        <p>- Master's Degree in Translation Studies</p>
-        <p>- Certified Translator (ATA Member)</p>
-        <p>- Extensive experience in business, legal, and creative content translation</p>
+        <section>
+            <h2>Professional Experience</h2>
+            <ul>
+                <li><strong>03/13/2023 – 05/31/2023:</strong> Long-term substitute French teacher / Community School of Naples (CSN)</li>
+                <li><strong>August 1, 2021 - Present:</strong> Self-employed as Freelance Translator and Consecutive Interpreter (German/French >< English). Member of the American Translators Association (ATA). Fall 2023: US Government Adjudication for Tier 3 IT / Level II access (access to classified information). Clients include Legal World Interpreting (New York), TPO Solutions (GDPR consulting firm in Belgium), Letspeak, Diplomatic Language Services, Languagers, and the 20th Judicial Circuit (Florida).</li>
+                <li><strong>03/03/1998 – 06/03/2021:</strong> ASG Technologies, Inc. (Naples, Florida, USA): Executive Assistant & Translator; Senior HR Translator handling HR/legal translations (FR/GE >< EN).</li>
+                <li><strong>1991 – 1998:</strong> Translator and Editor roles at J.P. Morgan Trust Company of NY, European Committee for Standardization (CEN), and Law Office Cleary, Gottlieb, Steen & Hamilton (Brussels, Belgium).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Services</h2>
+            <p>As a trilingual translator (German/French >< English & German >< French) with over 30 years of experience, I specialize in providing legal translations. Additionally, I offer interpretation services, particularly consecutive interpretation of depositions, and tutoring services. My work is defined by excellence, engagement, and unparalleled dedication to precision, detail, and timely responsiveness.</p>
+        </section>
+
+        <section>
+            <blockquote>
+                “If you talk to a man in a language he understands, that goes to his head. If you talk to him in his own language, that goes to his heart.” – Nelson Mandela
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p><strong>Phone:</strong> +1 239 249 9862</p>
+            <p><strong>Email:</strong> <a href="mailto:ilonarsobczak@gmail.com">ilonarsobczak@gmail.com</a></p>
+        </section>
     </main>
     <footer>
-        <p>Contact: alex@translations.com | Phone: +123 456 7890</p>
-        <p>&copy; 2024 Alex's Translation Services</p>
+        <p>&copy; 2025 Ilona Translations LLC</p>
     </footer>
 </body>
 </html>
