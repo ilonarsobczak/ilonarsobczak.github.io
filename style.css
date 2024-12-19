@@ -30,11 +30,6 @@ nav a .flag {
     margin-left: 0.5rem;
 }
 
-nav a:hover .flag {
-    display: inline-block;
-}
-
-
 main {
     max-width: 800px;
     margin: 0 auto;

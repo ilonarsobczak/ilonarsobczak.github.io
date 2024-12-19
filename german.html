@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Übersetzungsdienste - Ilona Sobczak</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Translation Services - Ilona Sobczak</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -74,13 +73,22 @@
             background: #f9f9f9;
             border-left: 4px solid #0077cc;
         }
+        /* Styling for the profile photo */
+        .profile-photo {
+            float: right;
+            margin-left: 1rem;
+            max-width: 150px; /* Reduced size of the image */
+            height: auto;
+            margin-bottom: 0.5rem; /* Reduced space between image and next section */
+        }
+        /* Preventing the image from overlapping with the education section */
+        .about-me {
+            overflow: auto; /* This clears the float and ensures the text stays next to the image */
+            margin-bottom: 0; /* Removed extra space below the About Me section */
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ilona Sobczak</h1>
-        <p>Professionelle Übersetzerin und Dolmetscherin (Deutsch - Französisch - Englisch)</p>
-    </header>
     <nav>
         <a href="index.html" data-country="English">
             English <span class="flag">🇺🇸🇬🇧</span>
@@ -92,51 +100,61 @@
             Deutsch <span class="flag">🇩🇪</span>
         </a>
     </nav>    
+    <header>
+        <h1>Ilona Language Services</h1>
+        <p>Professional Translation and Interpretation (German - French - English)</p>
+    </header>
     <main>
-        <section>
-            <h2>Über mich</h2>
-            <p><strong>Doppelte Staatsbürgerschaft:</strong> Belgisch/Amerikanisch</p>
-            <p>Ich stamme aus Belgien, und mein Beruf führte mich 1993 in die USA. Meine größte Stärke als Übersetzerin und Dolmetscherin ist meine Dreisprachigkeit (Deutsch/Französisch/Englisch). Ich erlangte 2002 durch meinen Arbeitgeber die ständige Aufenthaltsgenehmigung und 2009 unabhängig die US-Staatsbürgerschaft.</p>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <!-- Insert photo here -->
+            <img src="headshot.jpg" alt="Ilona Sobczak" class="profile-photo">
+            <p><strong>Hi, my name is Ilona Sobczak</strong> </p>
+            <p>I am a United States / Belgian dual citizen, and my job brought me to the US in 1993. Being trilingual (German/French/English) is my greatest asset as a translator and interpreter. 
+                <p>I acquired permanent residence through my employer in 2002 and US citizenship independently in 2009.</p>
         </section>
 
         <section>
-            <h2>Ausbildung</h2>
+            <h2>Education</h2>
             <ul>
-                <li>19.11.2024: Erfolgreich bestanden: Schriftliche Prüfung des State Courts Administrator Office von Florida (Programm zur Zertifizierung und Regulierung von Gerichtsüdolmetschern) – aktuell gerichtsregistriert</li>
-                <li>23.06.1997: Belgisches Staatsexamen: Übersetzerin/Rezensentin – Ref.: 68022521886 / CFG97045</li>
-                <li>1987-1991: Institut Libre Marie Haps, Universität Louvain-la-Neuve, Brüssel, Belgien. Licenciée en Traduction (anerkannt als Master in Übersetzung in den USA)</li>
-                <li>Juli 1991: Stipendium in Germanischen Sprachen, Humboldt-Universität, Berlin, Deutschland</li>
+                <li>11/19/2024: Successfully passed the Written Exam administered by the State Courts Administrator Office of Florida (Court Interpreter Certification and Regulation Program) – currently being Court-registered</li>
+                <li>02/14/2023: Successfully passed Florida Teacher Certification Examination in French (K-12)</li>
+                <li>06/23/1997: Belgian State Exam: Translator/Reviewer – Ref.: 68022521886 / CFG97045</li>
+                <li>1991–1992: Teaching Certification acquired at the “Institut Saint Laurent” in Liège, Belgium</li>
+                <li>1987-1991: "Institut Libre Marie Haps", University of Louvain-la-Neuve, Brussels, Belgium. Licenciée en Traduction (recognized as Masters in Translation in the US)</li>
+                <li>July 1991: Scholarship in Germanic Languages, Humboldt University, Berlin, Germany</li>
             </ul>
         </section>
 
         <section>
-            <h2>Berufserfahrung</h2>
+            <h2>Professional Experience</h2>
             <ul>
-                <li><strong>1. August 2021 - Gegenwart:</strong> Selbstständige Freiberufliche Übersetzerin und Konsekutivdolmetscherin (Deutsch/Französisch >< Englisch). Mitglied der American Translators Association (ATA). Zugelassen für Tier 3 IT/Level II Zugang (US-Regierungszugang zu klassifizierten Informationen). Kunden: Legal World Interpreting (New York), TPO Solutions, Letspeak, Diplomatic Language Services, Languagers, und der 20. Gerichtsbezirk (Florida).</li>
-                <li><strong>3. März 1998 – 3. Juni 2021:</strong> ASG Technologies, Inc. (Naples, Florida, USA): Executive Assistant & Übersetzerin; Senior HR-Übersetzerin, spezialisiert auf HR/juristische Übersetzungen (DE/FR >< EN).</li>
-                <li><strong>1991 – 1998:</strong> Übersetzer- und Redakteurrollen bei J.P. Morgan Trust Company of NY, Europäisches Komitee für Normung (CEN), und Anwaltskanzlei Cleary, Gottlieb, Steen & Hamilton (Brüssel, Belgien).</li>
+                <li><strong>03/13/2023 – 05/31/2023:</strong> Long-term substitute French teacher / Community School of Naples (CSN)</li>
+                <li><strong>August 1, 2021 - Present:</strong> Self-employed as Freelance Translator and Consecutive Interpreter (German/French >< English). Member of the American Translators Association (ATA). Fall 2023: US Government Adjudication for Tier 3 IT / Level II access (access to classified information). Clients include Legal World Interpreting (New York), TPO Solutions (GDPR consulting firm in Belgium), Letspeak, Diplomatic Language Services, Languagers, and the 20th Judicial Circuit (Florida).</li>
+                <li><strong>03/03/1998 – 06/03/2021:</strong> ASG Technologies, Inc. (Naples, Florida, USA): Executive Assistant & Translator; Senior HR Translator handling HR/legal translations (FR/GE >< EN).</li>
+                <li><strong>1991 – 1998:</strong> Translator and Editor roles at J.P. Morgan Trust Company of NY, European Committee for Standardization (CEN), and Law Office Cleary, Gottlieb, Steen & Hamilton (Brussels, Belgium).</li>
             </ul>
         </section>
 
         <section>
-            <h2>Dienstleistungen</h2>
-            <p>Als dreisprachige Übersetzerin (Deutsch/Französisch >< Englisch und Deutsch >< Französisch) mit über 30 Jahren Erfahrung spezialisiere ich mich auf juristische Übersetzungen. Darüber hinaus biete ich Dolmetschdienste, insbesondere Konsekutivdolmetschen bei Aussagen, sowie Nachhilfedienste an. Meine Arbeit zeichnet sich durch Exzellenz, Engagement und unübertroffene Präzision, Detailtreue und zeitnahe Reaktionsfähigkeit aus.</p>
+            <h2>Services</h2>
+            <p>As a trilingual translator (German/French >< English & German >< French) with over 30 years of experience, I specialize in providing legal translations. Additionally, I offer interpretation services, particularly consecutive interpretation of depositions, and tutoring services. My work is defined by excellence, engagement, and unparalleled dedication to precision, detail, and timely responsiveness.</p>
         </section>
 
         <section>
             <blockquote>
-                « Wenn du mit einem Menschen in einer Sprache sprichst, die er versteht, geht das in seinen Kopf. Wenn du mit ihm in seiner eigenen Sprache sprichst, geht das in sein Herz. » – Nelson Mandela
+                “If you talk to a man in a language he understands, that goes to his head. If you talk to him in his own language, that goes to his heart.” – Nelson Mandela
             </blockquote>
         </section>
 
         <section>
-            <h2>Kontakt</h2>
-            <p><strong>Telefon:</strong> +1 239 249 9862</p>
+            <h2>Contact</h2>
+            <p><strong>Phone:</strong> +1 239 249 9862</p>
             <p><strong>Email:</strong> <a href="mailto:ilonarsobczak@gmail.com">ilonarsobczak@gmail.com</a></p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Ilona Translations LLC</p>
+        <p>&copy; 2025 Ilona Translations, LLC</p>
     </footer>
 </body>
 </html>
