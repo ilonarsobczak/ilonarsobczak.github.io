@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Translation Services - Ilona Sobczak</title>
+    <title>Ilona Language Services</title>
+    <link rel="icon" href="favicon.png" type="image/png">  <!-- Update the file path if your PNG is in a different directory -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome Link -->
     <style>
         body {
@@ -56,9 +58,10 @@
             color: #0077cc;
         }
         ul {
-            list-style: disc inside;
-            padding: 0;
+            list-style-position: outside; /* Ensures bullets are outside */
+
         }
+
         footer {
             text-align: center;
             padding: 1rem;
@@ -73,6 +76,7 @@
             padding: 1rem;
             background: #f9f9f9;
             border-left: 4px solid #0077cc;
+            margin-left: 1.5em; /* Aligns paragraphs with bullets */
         }
         /* Styling for the profile photo */
         .profile-photo {
@@ -92,12 +96,42 @@
             margin-right: 10px;
             color: #0077cc;
         }
-    </style>
+        section p {
+            margin-left: 1.5em; /* Aligns paragraphs with bullets */
+            text-indent: 0; /* Removes unintended first-line indent */
+        }
+        .client-logos {
+            display: flex;
+            flex-wrap: wrap; /* Ensures items wrap to the next line */
+            justify-content: center; /* Centers the logos within the container */
+            gap: 5rem 4rem; /* Horizontal (2.5rem) and vertical (1rem) spacing */
+            margin: 1.5rem 0; /* Adjusts spacing between the logo rows and other sections */
+        }
+
+        .client-logos img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .square-logos img {
+            width: 150px; /* Fixed size for square logos */
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Specific styling for rectangular logos */
+        .rectangular-logos img {
+            width: 200px; /* Adjustable width for rectangular logos */
+            height: auto;
+            object-fit: contain;
+        }
+        </style>
 </head>
 <body>
     <nav>
         <a href="index.html" data-country="English">
-            English <span class="flag">🇺🇸🇬🇧</span>
+            English <span class="flag">🇺🇸/🇬🇧</span>
         </a>
         <a href="french.html" data-country="Français">
             Français <span class="flag">🇫🇷</span>
@@ -108,59 +142,83 @@
     </nav>    
     <header>
         <h1>Ilona Language Services</h1>
-        <p>Professional Translation and Interpretation (German - French - English)</p>
+        <p> Übersetzungs- und Dolmetscherdienste (Deutsch – Französisch – Englisch)
+</p>
     </header>
     <main>
         <section class="about-me">
-            <h2><i class="fas fa-user section-icon"></i>About Me</h2>
+            <h2><i class="fas fa-user section-icon"></i> Über mich auf einen Blick </h2>
             <!-- Insert photo here -->
             <img src="headshot.jpg" alt="Ilona Sobczak" class="profile-photo">
-            <p><strong>Hi, my name is Ilona Sobczak</strong> </p>
-            <p>I am a United States / Belgian dual citizen, and my job brought me to the US in 1993. Being trilingual (German/French/English) is my greatest asset as a translator and interpreter. 
-                <p>I acquired permanent residence through my employer in 2002 and US citizenship independently in 2009.</p>
+            <p><strong>Hallo, ich heiße
+Ilona Sobczak</strong> </p>
+            <p> Vielen Dank für Ihr Interesse. Zunächst möchte ich mich kurz vorstellen: Ich verfüge über die doppelte Staatsbürgerschaft (US-amerikanisch / belgisch). Ich bin belgischer Herkunft, aber aus beruflichen Gründen bin ich 1993 in die Vereinigten Staaten ausgewandert. Da ich mehr als die Hälfte meines Lebens in den USA gelebt und gearbeitet habe, bin ich dreisprachig (Deutsch/Französisch/Englisch), was mein größter Vorteil als Übersetzer und Dolmetscher ist. Im Jahr 2002 erhielt ich durch meinen Arbeitgeber eine unbefristete Aufenthaltserlaubnis und 2009 die US-Staatsbürgerschaft auf eigene Initiative.
+ </p>
+
         </section>
 
         <section>
-            <h2><i class="fas fa-graduation-cap section-icon"></i>Education</h2>
+            <h2><i class="fas fa-graduation-cap section-icon"></i>Ausbildung</h2>
             <ul>
-                <li>11/19/2024: Successfully passed the Written Exam administered by the State Courts Administrator Office of Florida (Court Interpreter Certification and Regulation Program) – currently being Court-registered</li>
-                <li>02/14/2023: Successfully passed Florida Teacher Certification Examination in French (K-12)</li>
-                <li>06/23/1997: Belgian State Exam: Translator/Reviewer – Ref.: 68022521886 / CFG97045</li>
-                <li>1991–1992: Teaching Certification acquired at the “Institut Saint Laurent” in Liège, Belgium</li>
-                <li>1987-1991: "Institut Libre Marie Haps", University of Louvain-la-Neuve, Brussels, Belgium. Licenciée en Traduction (recognized as Masters in Translation in the US)</li>
-                <li>July 1991: Scholarship in Germanic Languages, Humboldt University, Berlin, Germany</li>
+                <li>19/11/2024: Erfolgreiches Bestehen der schriftlichen Prüfung, die vom „State Courts Administrator Office of Florida“ (Court Interpreter Certification and Regulation Program) durchgeführt wurde - werde derzeit bei den Staatsgerichten des Bundesstaates Florida registriert </li>
+                <li>02/14/2023: Erfolgreiches Bestehen der „Florida Teacher Certification Examination“ in Französisch (K-12)</li>
+                <li>06/23/1997: Belgische Staatsprüfung: Übersetzer / Revisor – Ref.: 68022521886 / CFG97045</li>
+                <li>1991–1992: Pädagogische Zertifizierung / „Institut Saint Laurent“, Lüttich, Belgien </li>
+                <li>1987-1991: "Institut Libre Marie Haps / Université Catholique de Louvain-la-Neuve", Brüssel, Belgien : „Licencié- Traducteur" (als "Masters in Translation" in den USA anerkannt)</li>
+                <li>Juli 1991: Stipendium: Germanische Sprachen, Humboldt Universität, Berlin, Deutschland </li>
             </ul>
         </section>
 
         <section>
-            <h2><i class="fas fa-briefcase section-icon"></i>Professional Experience</h2>
+            <h2><i class="fas fa-briefcase section-icon"></i>Berufserfahrung</h2>
             <ul>
-                <li><strong>03/13/2023 – 05/31/2023:</strong> Long-term substitute French teacher / Community School of Naples (CSN)</li>
-                <li><strong>August 1, 2021 - Present:</strong> Self-employed as Freelance Translator and Consecutive Interpreter (German/French >< English). Member of the American Translators Association (ATA). Fall 2023: US Government Adjudication for Tier 3 IT / Level II access (access to classified information). Clients include Legal World Interpreting (New York), TPO Solutions (GDPR consulting firm in Belgium), Letspeak, Diplomatic Language Services, Languagers, and the 20th Judicial Circuit (Florida).</li>
-                <li><strong>03/03/1998 – 06/03/2021:</strong> ASG Technologies, Inc. (Naples, Florida, USA): Executive Assistant & Translator; Senior HR Translator handling HR/legal translations (FR/GE >< EN).</li>
-                <li><strong>1991 – 1998:</strong> Translator and Editor roles at J.P. Morgan Trust Company of NY, European Committee for Standardization (CEN), and Law Office Cleary, Gottlieb, Steen & Hamilton (Brussels, Belgium).</li>
+                <li><strong>13/03/2023 – 05/31/2023:</strong> Langzeitvertretung als Französischlehrerin an der Community School of Naples (CSN)</li>
+                <li><strong> Seit dem 1. August 2021:</strong> Selbstständig als freiberufliche Übersetzerin und Dolmetscherin (Deutsch/Französisch >< Englisch). Mitglied der American Translators Association (ATA). 
+Herbst 2023: US-Regierungszulassung für IT Tier 3 / Level II (Zugang zu Verschlusssachen).</li>
+                <li><strong>03/03/1998 – 03/06/2021:</strong> ASG Technologies, Inc. (Naples, Florida, USA): Executive Assistant & Translator; Senior HR Translator - zuständig für personelle/juristische Übersetzungen (FR/DE >< EN).</li>
+                <li><strong>1991 – 1998:</strong> Übersetzer und Editor bei J.P. Morgan Trust Company of NY, Europäisches Komitee für Normung  (Comité Européen de Normalisation / CEN), Rechtsanwaltskanzlei “Cleary, Gottlieb, Steen & Hamilton“ (Brüssel, Belgien); Sprachlehrer an der Hochschule für Wirtschaftswissenschaften „Institut Sainte Marie“ in Lüttich, Belgien.</li>
             </ul>
         </section>
 
         <section>
             <h2><i class="fas fa-cogs section-icon"></i>Services</h2>
-            <p>As a trilingual translator (German/French >< English & German >< French) with over 30 years of experience, I specialize in providing legal translations. Additionally, I offer interpretation services, particularly consecutive interpretation of depositions, and tutoring services. My work is defined by excellence, engagement, and unparalleled dedication to precision, detail, and timely responsiveness.</p>
+            <p>Als dreisprachige Übersetzerin (Deutsch/Französisch >< Englisch & Deutsch >< Französisch) mit über 30 Jahren Erfahrung bin ich insbesondere im Bereich juristischer Übersetzungen tätig. Darüber hinaus biete ich Dolmetscherdienste, insbesondere konsekutives Dolmetschen bei eidesstattlichen Aussagen, sowie Privatunterricht an. Meine Arbeit zeichnet sich durch Exzellenz, Engagement und unübertroffene Präzision, Detailtreue und zeitnahe Reaktionsfähigkeit aus.</p>
         </section>
 
         <section>
             <blockquote>
-                “If you talk to a man in a language he understands, that goes to his head. If you talk to him in his own language, that goes to his heart.” – Nelson Mandela
+                „Wenn Du mit einem Menschen in einer Sprache sprichst, die er versteht, geht das in seinen Kopf. Wenn Du mit ihm in seiner eigenen Sprache sprichst, berührt es sein Herz.“ – Nelson Mandela
             </blockquote>
         </section>
 
         <section>
-            <h2><i class="fas fa-phone-alt section-icon"></i>Contact</h2>
-            <p><strong>Phone:</strong> +1 239 249 9862</p>
-            <p><strong>Email:</strong> <a href="mailto:ilonarsobczak@gmail.com">ilonarsobczak@gmail.com</a></p>
+            <h2><i class="fas fa-handshake section-icon"></i>Zu meinen Kunden gehören</h2>
+            <div class="client-logos rectangular-logos">
+                <img src="logos/20th.png" alt="Florida 20th Judicial Court">
+                <img src="logos/legalworld.jpg" alt="Legal-World">
+                <img src="logos/letspeak.png" alt="Letspeak">
+            </div>
+            <div class="client-logos rectangular-logos">
+                <img src="logos/dls.png" alt="Diplomatic Language Services">
+                <img src="logos/yates.png" alt="Yates Campbell LLP">
+                <img src="logos/tpo.png" alt="TPO Solutions">
+            </div>
+            <div class="client-logos rectangular-logos">
+                <img src="logos/ccg.png" alt="Certified Collectibles Group">
+                <img src="logos/lang.jpg" alt="Languagers">
+                <img src="logos/forefront.png" alt="Forefront International">
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-phone-alt section-icon"></i>Kontaktinformationen</h2>
+            <p><strong>Tel.:</strong> +1 239 249 9862</p>
+            <p><strong>E-Mail:</strong> <a href="mailto:ilonarsobczak@gmail.com">ilonarsobczak@gmail.com</a></p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Ilona Translations, LLC</p>
+        <p>&copy; 2025 Ilona Translations LLC</p>
     </footer>
 </body>
 </html>
+
