@@ -129,6 +129,10 @@
             max-width: 150px; /* Reduced size of the image */
             height: auto;
             margin-bottom: 0.5rem; /* Reduced space between image and next section */
+            border: 4px solid #ffffff; /* white frame to stand out on colored backgrounds */
+            border-radius: 8px; /* slightly rounded corners */
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* subtle elevation */
+            background-clip: padding-box; /* ensure border doesn't overlap image */
         }
         /* Preventing the image from overlapping with the education section */
         .about-me {
@@ -167,6 +171,13 @@
         /* Specific styling for rectangular logos */
         .rectangular-logos img {
             width: 200px; /* Adjustable width for rectangular logos */
+            height: auto;
+            object-fit: contain;
+        }
+        /* Larger display for the 15th circuit logo without breaking responsiveness */
+        .logo-15cir {
+            width: 260px; /* increased size */
+            max-width: 100%;
             height: auto;
             object-fit: contain;
         }
@@ -278,7 +289,9 @@
         <section>
             <h2><i class="fas fa-gavel section-icon"></i>Certified State Court Interpreter based in Florida providing interpretation and translation services in the legal field</h2>
             <p>
-                Are you a law firm or an attorney seeking a Florida-based German- or French-speaking interpreter for depositions, mediations, arbitrations, hearings, or other legal proceedings? I am a Certified Florida State Court Interpreter, offering professional translation and interpretation services for any legal cases, remotely and/or in-person. With over 30 years of experience, I provide accurate, confidential, and timely support for attorneys and professionals in the legal field.
+                Are you a law firm or an attorney seeking a Florida-based German- or French-speaking interpreter for depositions, mediations, arbitrations, hearings, or other legal proceedings? I am a Certified Florida State Court Interpreter, offering professional translation and interpretation services for any legal cases, remotely and/or in-person. With over 30 years of experience, I provide accurate, confidential, and timely support for attorneys and professionals in the legal field. 
+                <br><br>
+                You can find my German certification details on the <a href="https://flcourts-media.flcourts.gov/content/download/217081/file/language-skilled-court-interpreters-german.pdf" target="_blank" rel="noopener noreferrer">Florida Courts website</a>.
             </p>
         </section>
 
@@ -351,23 +364,35 @@
         <section>
             <h2><i class="fas fa-handshake section-icon"></i>My Clients Include</h2>
             <div class="client-logos rectangular-logos">
-                <img src="logos/20th.png" alt="Florida 20th Judicial Court legal interpreter USA">
-                <img src="logos/legalworld.jpg" alt="Legal-World legal translation Belgium">
-                <img src="logos/letspeak.png" alt="Letspeak multilingual interpreter North America">
+                <img src="logos/20th.png" alt="Florida 20th Judicial Court legal interpreter USA" class="logo-15cir">
+                <img src="logos/15thcir.png" alt="Florida 15th Judicial Court legal interpreter USA" class="logo-15cir">
+                
             </div>
-            <div class="client-logos rectangular-logos">
-                <img src="logos/dls.png" alt="Diplomatic Language Services German French interpreter">
-                <img src="logos/yates.png" alt="Yates Campbell LLP certified translator USA">
-                <img src="logos/tpo.png" alt="TPO Solutions business French translator Belgium">
-            </div>
-            <div class="client-logos rectangular-logos">
+                <div class="client-logos rectangular-logos">
                 <img src="logos/ccg.png" alt="Certified Collectibles Group German-English translator US">
                 <img src="logos/lang.jpg" alt="Languagers trilingual interpreter USA Belgium">
                 <img src="logos/forefront.png" alt="Forefront International remote German-French interpreter Europe USA">
             </div>
+            <div class="client-logos rectangular-logos">
+                <img src="logos/legalworld.jpg" alt="Legal-World legal translation Belgium">
+                <img src="logos/letspeak.png" alt="Letspeak multilingual interpreter North America">
+                <img src="logos/dls.png" alt="Diplomatic Language Services German French interpreter">
+            </div>
+            </div>
+            <div class="client-logos rectangular-logos">
+                    <img src="logos/USLS.png" alt="US Legal Support">
+                    <img src="logos/MM.png" alt="Morgan & Morgan">
+            </div>
+     
+
             <blockquote>
                 "Thanks Ilona, You have been a joy to work with and we hope we have the opportunity to use your services again in the future!"
                 <br><strong>- David R., International Justice Mission</strong>
+            </blockquote>
+
+             <blockquote>
+                "You are a great interpreter and hopefully we get the opportunity to work with you again in the future!"
+                <br><strong>-  Melissa K., Attorney at Law, Rafool PLLC</strong>
             </blockquote>
         </section>
         

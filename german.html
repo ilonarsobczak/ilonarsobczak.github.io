@@ -126,6 +126,10 @@
             max-width: 150px; /* Reduced size of the image */
             height: auto;
             margin-bottom: 0.5rem; /* Reduced space between image and next section */
+            border: 4px solid #ffffff; /* white frame to stand out on colored backgrounds */
+            border-radius: 8px; /* slightly rounded corners */
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* subtle elevation */
+            background-clip: padding-box; /* ensure border doesn't overlap image */
         }
         /* Preventing the image from overlapping with the education section */
         .about-me {
@@ -190,7 +194,7 @@
         <section class="about-me">
             <h2><i class="fas fa-user section-icon"></i> Über mich auf einen Blick </h2>
             <!-- Insert photo here -->
-            <img src="headshot.jpg" alt="Ilona Sobczak" class="profile-photo">
+            <img src="headshot.jpg" alt="Ilona Sobczak - Certified German and French Interpreter and Translator in Florida, USA, Belgium, North America, Europe" class="profile-photo">
             <p><strong>Hallo, ich heiße
 Ilona Sobczak</strong> </p>
             <p> Vielen Dank für Ihr Interesse. Zunächst möchte ich mich kurz vorstellen: Ich verfüge über die doppelte Staatsbürgerschaft (US-amerikanisch / belgisch). Ich bin belgischer Herkunft, aber aus beruflichen Gründen bin ich 1993 in die Vereinigten Staaten. Da ich mehr als die Hälfte meines Lebens in den USA gelebt und gearbeitet habe, bin ich dreisprachig (Deutsch/Französisch/Englisch), was mein größter Vorteil als Übersetzer und Dolmetscher ist. Im Jahr 2002 erhielt ich durch meinen Arbeitgeber eine unbefristete Aufenthaltserlaubnis und 2009 die US-Staatsbürgerschaft auf eigene Initiative.
@@ -233,28 +237,40 @@ Ilona Sobczak</strong> </p>
             </blockquote>
         </section>
 
+        
         <section>
-            <h2><i class="fas fa-handshake section-icon"></i>Zu meinen Kunden gehören</h2>
+            <h2><i class="fas fa-handshake section-icon"></i>My Clients Include</h2>
             <div class="client-logos rectangular-logos">
-                <img src="logos/20th.png" alt="Florida 20th Judicial Court">
-                <img src="logos/legalworld.jpg" alt="Legal-World">
-                <img src="logos/letspeak.png" alt="Letspeak">
+                <img src="logos/20th.png" alt="Florida 20th Judicial Court legal interpreter USA" class="logo-15cir">
+                <img src="logos/15thcir.png" alt="Florida 15th Judicial Court legal interpreter USA" class="logo-15cir">
+                
+            </div>
+                <div class="client-logos rectangular-logos">
+                <img src="logos/ccg.png" alt="Certified Collectibles Group German-English translator US">
+                <img src="logos/lang.jpg" alt="Languagers trilingual interpreter USA Belgium">
+                <img src="logos/forefront.png" alt="Forefront International remote German-French interpreter Europe USA">
             </div>
             <div class="client-logos rectangular-logos">
-                <img src="logos/dls.png" alt="Diplomatic Language Services">
-                <img src="logos/yates.png" alt="Yates Campbell LLP">
-                <img src="logos/tpo.png" alt="TPO Solutions">
+                <img src="logos/legalworld.jpg" alt="Legal-World legal translation Belgium">
+                <img src="logos/letspeak.png" alt="Letspeak multilingual interpreter North America">
+                <img src="logos/dls.png" alt="Diplomatic Language Services German French interpreter">
+            </div>
             </div>
             <div class="client-logos rectangular-logos">
-                <img src="logos/ccg.png" alt="Certified Collectibles Group">
-                <img src="logos/lang.jpg" alt="Languagers">
-                <img src="logos/forefront.png" alt="Forefront International">
+                    <img src="logos/USLS.png" alt="US Legal Support">
+                    <img src="logos/MM.png" alt="Morgan & Morgan">
             </div>
+
             <blockquote>
-                "Vielen Dank, Ilona. Es war eine Freude, mit Dir zusammenzuarbeiten, und wir hoffen, dass wir in Zukunft wieder die Gelegenheit haben werden, Deine Dienste in Anspruch nehmen zu können!"
+                "Thanks Ilona, You have been a joy to work with and we hope we have the opportunity to use your services again in the future!"
                 <br><strong>- David R., International Justice Mission</strong>
             </blockquote>
-        </section>
+
+             <blockquote>
+                "You are a great interpreter and hopefully we get the opportunity to work with you again in the future!"
+                <br><strong>-  Melissa K., Attorney at Law, Rafool PLLC</strong>
+            </blockquote>
+
         <section id="seo-faq" style="display:none;">
             <h2>Häufige Fragen zu Dolmetscher- und Übersetzungsdiensten (SEO)</h2>
             <div itemscope itemtype="https://schema.org/FAQPage">

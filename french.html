@@ -126,6 +126,10 @@
             max-width: 150px; /* Reduced size of the image */
             height: auto;
             margin-bottom: 0.5rem; /* Reduced space between image and next section */
+            border: 4px solid #ffffff; /* white frame to stand out on colored backgrounds */
+            border-radius: 8px; /* slightly rounded corners */
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* subtle elevation */
+            background-clip: padding-box; /* ensure border doesn't overlap image */
         }
         /* Preventing the image from overlapping with the education section */
         .about-me {
@@ -189,7 +193,7 @@
         <section class="about-me">
             <h2><i class="fas fa-user section-icon"></i>Aperçu de mon profil</h2>
             <!-- Insert photo here -->
-            <img src="headshot.jpg" alt="Ilona Sobczak" class="profile-photo">
+            <img src="headshot.jpg" alt="Ilona Sobczak - Certified German and French Interpreter and Translator in Florida, USA, Belgium, North America, Europe" class="profile-photo">
             <p><strong>Bonjour, je m’appelle Ilona Sobczak</strong> </p>
             <p> Je vous remercie pour votre intérêt. Permettez-moi de me présenter brièvement : <br> J'ai la double nationalité (américaine et belge). Étant d'origine belge, j'ai immigré aux États-Unis pour des raisons professionnelles en 1993. Ayant vécu et travaillé plus de la moitié de ma vie aux États-Unis, je suis devenue trilingue (allemand / français / anglais), ce qui est mon plus grand atout en tant que traductrice et interprète. J'ai obtenu la résidence permanente par l'intermédiaire de mon employeur en 2002 et la nationalité américaine de manière indépendante en 2009. </p>
 
@@ -224,26 +228,36 @@
             <p>En tant que traductrice trilingue (allemand/français >< anglaise & allemand >< français) ayant plus de 30 ans d’expérience, je suis spécialisée dans les traductions juridiques. En outre, je propose des services d'interprétation, en particulier l'interprétation consécutive de témoignages sous serment, ainsi que des services de tutorat. Je prône l'excellence, l'engagement et un dévouement inégalé à la précision, au détail et à la réactivité.</p>
         </section>
 
+
         <section>
-            <h2><i class="fas fa-handshake section-icon"></i>Parmi mes Clients</h2>
+            <h2><i class="fas fa-handshake section-icon"></i>My Clients Include</h2>
             <div class="client-logos rectangular-logos">
-                <img src="logos/20th.png" alt="Florida 20th Judicial Court">
-                <img src="logos/legalworld.jpg" alt="Legal-World">
-                <img src="logos/letspeak.png" alt="Letspeak">
+                <img src="logos/20th.png" alt="Florida 20th Judicial Court legal interpreter USA" class="logo-15cir">
+                <img src="logos/15thcir.png" alt="Florida 15th Judicial Court legal interpreter USA" class="logo-15cir">
+                
+            </div>
+                <div class="client-logos rectangular-logos">
+                <img src="logos/ccg.png" alt="Certified Collectibles Group German-English translator US">
+                <img src="logos/lang.jpg" alt="Languagers trilingual interpreter USA Belgium">
+                <img src="logos/forefront.png" alt="Forefront International remote German-French interpreter Europe USA">
             </div>
             <div class="client-logos rectangular-logos">
-                <img src="logos/dls.png" alt="Diplomatic Language Services">
-                <img src="logos/yates.png" alt="Yates Campbell LLP">
-                <img src="logos/tpo.png" alt="TPO Solutions">
+                <img src="logos/legalworld.jpg" alt="Legal-World legal translation Belgium">
+                <img src="logos/letspeak.png" alt="Letspeak multilingual interpreter North America">
+                <img src="logos/dls.png" alt="Diplomatic Language Services German French interpreter">
+            </div>
             </div>
             <div class="client-logos rectangular-logos">
-                <img src="logos/ccg.png" alt="Certified Collectibles Group">
-                <img src="logos/lang.jpg" alt="Languagers">
-                <img src="logos/forefront.png" alt="Forefront International">
+                    <img src="logos/USLS.png" alt="US Legal Support">
+                    <img src="logos/MM.png" alt="Morgan & Morgan">
             </div>
             <blockquote>
                 « Merci Ilona, c'était un plaisir de travailler avec toi et nous espérons avoir l'occasion de faire de nouveau appel à tes services à l'avenir ! »
                 <br><strong>- David R., International Justice Mission</strong>
+            </blockquote>
+            <blockquote>
+                "You are a great interpreter and hopefully we get the opportunity to work with you again in the future!"
+                <br><strong>-  Melissa K., Attorney at Law, Rafool PLLC</strong>
             </blockquote>
         </section>
         <section id="seo-faq" style="display:none;">
